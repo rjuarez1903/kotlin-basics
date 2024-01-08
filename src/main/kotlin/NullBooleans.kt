@@ -10,4 +10,7 @@ fun main() {
         println("Is null")
     }
 
+    // We can use the Elvis operator to provide a default value
+    val isAdult2 = isAdult ?: false
+    println(isAdult2)
 }
