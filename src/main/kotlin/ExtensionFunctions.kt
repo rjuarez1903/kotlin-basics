@@ -7,9 +7,10 @@ fun main() {
     }
 
 }
-
-// Extension functions are functions that we can add to existing classes
-// We can add functions to any class, even classes that we don't own
+/*
+    Extension functions are functions that we can add to existing classes
+    We can add functions to any class, even classes that we don't own
+*/
 fun Int.isPrime(): Boolean {
     if (this <= 1) return false
 

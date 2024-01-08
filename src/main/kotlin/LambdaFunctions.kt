@@ -2,8 +2,10 @@ fun main() {
 
     val list = (1..20).toList()
     println(list)
-    // Lambda functions are functions that are not declared, but passed immediately as an expression
-    // We can use the filter method to filter the list
+    /*
+        Lambda functions are functions that are not declared, but passed immediately as an expression
+        We can use the filter method to filter the list
+    */
     val evenNumbers = list.filter { it % 2 == 0 }
     println(evenNumbers)
     // We can use the map method to transform the list
@@ -31,10 +33,10 @@ fun main() {
 }
 
 /*
- We can create an extension function to filter a list
- The filter function receives a lambda function as a parameter
- The lambda function receives a Shape as a parameter, and returns a Boolean
- The filter function returns a list of Shape
+    We can create an extension function to filter a list
+    The filter function receives a lambda function as a parameter
+    The lambda function receives a Shape as a parameter, and returns a Boolean
+    The filter function returns a list of Shape
 */
 fun List<Shape>.customFilter(filterFunction: (Shape) -> Boolean): List<Shape> {
     val resultList = mutableListOf<Shape>()

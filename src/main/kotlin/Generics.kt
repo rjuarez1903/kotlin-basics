@@ -8,14 +8,17 @@ fun main() {
     var evenNumbers = (1..10).toList().customFilter { it % 2 == 0 }
     println(evenNumbers)
 
-    // Classes can be generic too
-    // Triple is a generic class that can hold three values of any type
+    /*
+        Classes can be generic too
+        Triple is a generic class that can hold three values of any type
+     */
     var triple = Triple<Int, String, Boolean>(1, "Hello", true)
-    // We don't need to specify the types, they're inferred.
-    // We can also use the Triple constructor without specifying the types
-    // var triple = Triple(1, "Hello", true)
 
-
+    /*
+        We don't need to specify the types, they're inferred.
+        We can also use the Triple constructor without specifying the types
+        var triple = Triple(1, "Hello", true)
+    */
 }
 
 

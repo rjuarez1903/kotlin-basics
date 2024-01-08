@@ -1,9 +1,11 @@
 import kotlin.random.Random
 
 class Circle(val radius: Double): Shape("Circle") {
-    // This is a companion object
-    // It is similar to a static class in Java
-    // It can be accessed without creating an instance of the class
+    /*
+        This is a companion object
+        It is similar to a static class in Java
+        It can be accessed without creating an instance of the class
+     */
     companion object {
         fun randomCircle(): Circle {
             val radius = Random.nextDouble(1.0, 10.0)

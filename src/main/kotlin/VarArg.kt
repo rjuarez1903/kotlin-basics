@@ -26,8 +26,10 @@ fun getMax(vararg numbers: Int): Int {
     return max
 }
 
-// IndexOf function, using lambdas
-// In this function, we use the forEachIndexed method from the List interface
+/*
+    IndexOf function, using lambdas
+    In this function, we use the forEachIndexed method from the List interface
+*/
 fun indexOf(numbers: List<Int>, number: Int): Int {
     numbers.forEachIndexed { index, it ->
         if (it == number) {
